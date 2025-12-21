@@ -7,7 +7,7 @@ import React, { useState, useRef, useEffect, useCallback } from 'react';
 import styles from './Chatbot.module.css';
 
 // API Configuration
-const API_BASE_URL = 'http://localhost:8001';
+const API_BASE_URL = 'https://khizarhyat1-hackathon-nativebook.hf.space';
 
 interface Message {
   id: string;
