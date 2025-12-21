@@ -1,0 +1,8 @@
+{
+    "label": "Module 01: The Robotic Nervous System",
+    "position": 1,
+    "link": {
+        "type": "generated-index",
+        "description": "Establish the middleware foundation for robot control with ROS 2"
+    }
+}

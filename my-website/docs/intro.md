@@ -1,47 +1,112 @@
 ---
-sidebar_position: 1
+sidebar_position: 0
+sidebar_label: Introduction
+title: Physical AI & Humanoid Robotics
+description: The AI-Native Textbook for building intelligent robotic systems
 ---
 
-# Tutorial Intro
+# Physical AI & Humanoid Robotics
 
-Let's discover **Docusaurus in less than 5 minutes**.
+:::tip Welcome
+This is an **AI-Native Textbook** designed for learning at the intersection of artificial intelligence and physical robotics. The content is structured for both human comprehension and AI-assisted learning.
+:::
 
-## Getting Started
+## Course Overview
 
-Get started by **creating a new site**.
+This curriculum takes you from **ROS 2 fundamentals** to building a complete **voice-controlled autonomous humanoid robot**.
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
-
-### What you'll need
-
-- [Node.js](https://nodejs.org/en/download/) version 20.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
-
-## Generate a new site
-
-Generate a new Docusaurus site using the **classic template**.
-
-The classic template will automatically be added to your project after you run the command:
-
-```bash
-npm init docusaurus@latest my-website classic
+```mermaid
+graph LR
+    M1[Module 1<br/>ROS 2] --> M2[Module 2<br/>Simulation]
+    M2 --> M3[Module 3<br/>Isaac/SLAM]
+    M3 --> M4[Module 4<br/>VLA Capstone]
 ```
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
+## The Four Modules
 
-The command also installs all necessary dependencies you need to run Docusaurus.
+| Module | Title | Objective | Deliverable |
+|--------|-------|-----------|-------------|
+| **01** | The Robotic Nervous System | ROS 2 middleware foundation | Hello Robot node + URDF model |
+| **02** | The Digital Twin | Physics simulation & sensors | Environment with obstacle sensing |
+| **03** | The AI-Robot Brain | Perception & navigation | Robot that maps and navigates |
+| **04** | Vision-Language-Action | LLM + voice integration | Autonomous humanoid (Capstone) |
 
-## Start your site
+## Prerequisites
 
-Run the development server:
+Before starting, you should have:
 
-```bash
-cd my-website
-npm run start
+- **Python 3.10+** programming experience
+- Basic understanding of **Linux command line**
+- Familiarity with **object-oriented programming**
+- A computer with **Ubuntu 22.04** (or WSL2 on Windows)
+
+## Technology Stack
+
+```mermaid
+graph TB
+    subgraph "Software"
+        ROS2[ROS 2 Humble]
+        GAZEBO[Gazebo Sim]
+        ISAAC[NVIDIA Isaac]
+        WHISPER[OpenAI Whisper]
+        GPT[LLM - GPT-4]
+    end
+    
+    subgraph "Languages"
+        PYTHON[Python 3.10+]
+        CPP[C++ (optional)]
+        XML[XML/URDF]
+    end
 ```
 
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
+## Learning Path
 
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
+### Module 1: The Robotic Nervous System (ROS 2)
+- ROS 2 Architecture: Nodes, Topics, Services, Actions
+- Python Bridging with `rclpy`
+- URDF: Anatomy of a Humanoid
 
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+### Module 2: The Digital Twin (Gazebo & Unity)
+- Physics Engines: Configuring Gazebo
+- Unity Rendering for HRI
+- Sensor Simulation: LiDAR, Depth, IMU
+
+### Module 3: The AI-Robot Brain (NVIDIA Isaac)
+- Isaac Sim: Synthetic Data Generation
+- Visual SLAM: Mapping and Localization
+- Nav2: Autonomous Navigation
+
+### Module 4: Vision-Language-Action (VLA) — Capstone
+- Voice Pipeline: OpenAI Whisper
+- Cognitive Logic: LLM Task Planning
+- **Capstone**: The Autonomous Humanoid
+
+## Using This Textbook with AI
+
+This curriculum is designed to work seamlessly with AI coding assistants:
+
+```python
+# Example: Ask Claude to help you understand a concept
+"""
+@claude: Explain how ROS 2 topics work and show me 
+an example publisher/subscriber in Python
+"""
+```
+
+:::tip AI-Assisted Learning
+Use AI assistants to:
+- Explain complex concepts in simpler terms
+- Debug your ROS 2 code
+- Generate variations of example code
+- Answer questions about robotics theory
+:::
+
+## Ready to Begin?
+
+**[Start Module 1: The Robotic Nervous System →](/docs/robotic-nervous-system/ros2-architecture)**
+
+---
+
+*This textbook embodies the principle of Human-Agent-Robot Symbiosis — where humans provide direction, AI agents assist with reasoning, and robots execute in the physical world.*
+
+

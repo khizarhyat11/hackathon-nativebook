@@ -1,55 +1,105 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+# Physical AI & Humanoid Robotics Textbook Constitution
+
+## Project Identity
+
+**Name**: AI-Native Textbook: Physical AI & Humanoid Robotics
+**Type**: Educational Documentation Site
+**Framework**: Docusaurus + Spec-Kit Plus
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+1. **Human-Agent-Robot Symbiosis**: Content designed for collaborative learning between humans, AI assistants, and robotic systems
+2. **AI-Native Pedagogy**: Structured for both human comprehension and AI-assisted learning
+3. **Practical Rigor**: Every concept paired with executable code examples
+4. **Future-Ready Skills**: Curriculum aligned with emerging industry demands
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+## Curriculum Structure (4 Modules)
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### Module 01: The Robotic Nervous System (ROS 2)
+- **Objective**: Establish the middleware foundation for robot control
+- **Topics**: ROS 2 Architecture, Python Bridging (rclpy), URDF
+- **Deliverable**: "Hello Robot" node + basic URDF bipedal model
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### Module 02: The Digital Twin (Gazebo & Unity)
+- **Objective**: Master physics simulation and high-fidelity environments
+- **Topics**: Physics Engines, Rendering, Sensor Simulation
+- **Deliverable**: Simulation environment with obstacle sensing
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### Module 03: The AI-Robot Brain (NVIDIA Isaac™)
+- **Objective**: Implement advanced perception and VSLAM
+- **Topics**: Isaac Sim, Visual SLAM, Nav2 Navigation
+- **Deliverable**: Robot that can map a room and navigate A to B
 
-### [PRINCIPLE_6_NAME]
+### Module 04: Vision-Language-Action (VLA)
+- **Objective**: Convergence of LLMs and Physical Robotics (Capstone)
+- **Topics**: Voice Pipeline (Whisper), LLM Task Parsing, Action Sequences
+- **Deliverable**: "The Autonomous Humanoid" - voice-commanded robot
 
+## Formatting Standards
 
-[PRINCIPLE__DESCRIPTION]
+- **Frontmatter**: Each file must include `sidebar_label` and `sidebar_position`
+- **Code Blocks**: Python/C++ with syntax highlighting
+- **Visuals**: Mermaid.js diagrams for ROS node graphs
+- **Callouts**: Docusaurus admonitions (:::tip, :::danger) for safety warnings
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
+## Standards
 
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
+### Technology Stack
+- **Framework**: Docusaurus for static site generation
+- **Scaffolding**: Spec-Kit Plus for spec-driven development
+- **Content Generation**: Claude Code for AI-assisted authoring
+- **Output Format**: Markdown-based documentation
+- **Deployment**: GitHub Pages for public accessibility
 
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
+### Content Structure
+- Modular chapters with clear learning objectives
+- Interactive code blocks with copy functionality
+- Visual diagrams for complex concepts
+- Progressive difficulty from foundations to advanced topics
+- Cross-references between related topics
 
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+### Target Audience
+- O/A Level students with programming fundamentals
+- Engineering students and professionals
+- Medical professionals transitioning to healthcare robotics
+- Technical learners seeking AI + robotics skills
+
+## Constraints
+
+### Technical Constraints
+- Must use Spec-Kit Plus for all specification work
+- Must use Claude Code for content generation
+- Static site hosting via GitHub Pages only
+- No server-side processing requirements
+
+### Content Constraints
+- Focus on intersection of physical hardware control and AI agent logic
+- Code examples must be executable (Python, ROS2 preferred)
+- All diagrams must be accessible (alt text required)
+- Content must support both dark and light reading modes
+
+## Success Criteria
+
+### Deployment Success
+- Zero-error build accessible via public GitHub Pages URL
+- All pages load in under 3 seconds
+- Mobile-responsive design works on all device sizes
+
+### Completeness Success
+- Full course curriculum covered in Docusaurus structure
+- All 5 parts with learning objectives met
+- Glossary and references complete
+
+### Scalability Success
+- Architecture allows for future AI-agent integration
+- Content structured for machine readability
+- Modular design enables easy updates and additions
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+This constitution supersedes all other development practices for this project. Any amendments require:
+1. Documentation of the proposed change
+2. Review of impact on existing content
+3. Migration plan for affected sections
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Version**: 1.0.0 | **Ratified**: 2025-12-21 | **Last Amended**: 2025-12-21
