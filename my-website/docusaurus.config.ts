@@ -11,13 +11,13 @@ const config: Config = {
     v4: true,
   },
 
-  // GitHub Pages deployment configuration
-  url: 'https://your-username.github.io',
-  baseUrl: '/first-book/',
+  // Vercel deployment configuration
+  url: 'https://hackathon-nativebook.vercel.app',
+  baseUrl: '/',
 
-  // GitHub Pages deployment settings
-  organizationName: 'your-username', // Your GitHub username
-  projectName: 'first-book', // Your repository name
+  // GitHub Pages deployment settings (legacy)
+  organizationName: 'khizarhyat11', // Your GitHub username
+  projectName: 'hackathon-nativebook', // Your repository name
   deploymentBranch: 'gh-pages',
   trailingSlash: false,
 
